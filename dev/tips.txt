@@ -1,0 +1,5 @@
+Watch if any file change in assets/sass folder to set output to assets/css
+sass --watch assets/sass:assets/css
+
+Para entender as imagens inseridas por bourbon
+http://bourbon.io/docs/#background-image

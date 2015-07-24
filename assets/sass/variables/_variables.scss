@@ -1,0 +1,34 @@
+// fonts
+$font-family-base: 'Open Sans', Helvetica, sans-serif;
+
+// colors
+$color1: #fff;
+$color2: #000;
+$color2: #222;
+$color3: #333;
+$color4: #f6f6f6;
+$color5: #8E5392; // purple
+$color6: #733A75; // purple hover
+
+// background colors
+$background-color1: #fff;
+$background-color2: #000;
+
+// mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin btn-principal {
+  @include border-radius(35px);
+  color: $color1;
+  background-color: $color5;
+  border-color: $color5;
+}
+
+@mixin link1-mixin {
+  color: $color5;
+}

@@ -1,0 +1,62 @@
+.wrap-all {
+  margin-left: 15%;
+}
+
+.if-img {
+  margin-top: 1%;
+  float: left;
+}
+
+.main-wrap {
+  @include background-image(url("/assets/images/space.jpg"));
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  color: $color1;
+}
+
+.col-margin {
+  margin: 15% 0 10%;
+}
+
+.main-btn {
+  @include btn-principal;
+  font-size: 1em;
+  font-weight: 600;
+  
+  // transition quando volta do efeito hover
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(ease-in);
+  @include transition-delay(0.5s);
+}
+
+.main-btn:hover, .main-btn:focus {
+  color: $color1;
+  background-color: $color6;
+  border-color: $color6;
+  
+  // transition quando acessa botão
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(ease-in);
+  @include transition-delay(0.5s);
+}
+
+.intro-text {
+  margin: 0;
+  font-size: 4.5em;
+  /*text-shadow: 1px 2px 3px #666;*/
+}
+
+.link-principal {
+  @include link1-mixin;
+}
+
+.link-principal:hover, .link-principal:focus  {
+  color: $color6;
+}
+
+.third-text {
+  margin: 2% 0 2% 0;
+}
