@@ -20,77 +20,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-md-12 col-margin">
           <h1 class="text-uppercase text-center intro-text">
             <strong>
-              Jogos gerados com <a href="http://phaser.io/" class="link-principal" target="blank">Phaser</a>
+              <!--Jogos gerados com <a href="http://phaser.io/" class="link-principal" target="blank">Phaser</a>-->
+              Começe seu jogo hoje!
+              <h1>Seja Bem-Vindo ao IFRSGAMER</h1>
             </strong>
           </h1>
           <hr>
           <h4 class="text-center second-text text-uppercase"><strong>Curso de Sistemas para Internet do IFRS Porto Alegre - 2015</strong></h4>
           <div class="third-text">
             <!--<h5 class="text-center">Clique aqui e descubra</h5>-->
-            <button type="button" class="main-btn btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Enviar seu jogo!</button>
+            <button type="button" class="main-btn btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Envie seu jogo!</button>
           </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-
-              <form action="" method="">
-
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                  </button>
-                  <h4 class="modal-title text-center" id="myModalLabel">Fill the form and Send the Game!</h4>
-                </div>
-                <div class="modal-body">
-
-
-                  <!--img to upload -->
-                  <div class="row">
-                    <div class="col-xs-6 col-md-6">
-                      <a href="#" class="thumbnail">
-                        <img src="/assets/images/talk.png" alt="...">
-                      </a>
-                    </div>
-                  </div>
-
-                  <!-- description max 140 words p/ex-->
-                  <div>
-
-
-
-                  </div>
-
-                  <!-- instructions -->
-                  <div>
-
-
-
-                  </div>
-
-                  <!-- checkbox tags -->
-                  <div>
-
-
-
-                  </div>
-
-              </form>
-
-
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-              </form>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Modal -->
+        <!-- Loads Modal.php file -->
+        <?php $this->load->view('modal'); ?>
 
       </div>
     </div>

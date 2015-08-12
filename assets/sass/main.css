@@ -5810,7 +5810,7 @@ hr {
 
 footer {
   color: #fff;
-  background-color: #222; }
+  background-color: #333; }
 
 .border-bottom {
   border-bottom: 1px #f6f6f6 solid; }
@@ -5834,15 +5834,15 @@ footer {
   margin: 15% 0 10%; }
 
 .main-btn {
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  border-radius: 35px;
   color: #fff;
   background-color: #8E5392;
   border-color: #8E5392;
   font-size: 1em;
   font-weight: 600;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  border-radius: 35px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   transition-property: all;
@@ -5886,5 +5886,8 @@ footer {
 
 .third-text {
   margin: 2% 0 2% 0; }
+
+.copyright {
+  padding: 10px 0; }
 
 /*# sourceMappingURL=main.css.map */

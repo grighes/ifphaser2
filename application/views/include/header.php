@@ -33,6 +33,9 @@
             <li class="page-scroll">
               <a href="#contact">Contact</a>
             </li>
+            <li class="page-scroll">
+              <a href="#login">Login</a>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->

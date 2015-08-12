@@ -4,7 +4,6 @@ $font-family-base: 'Open Sans', Helvetica, sans-serif;
 // colors
 $color1: #fff;
 $color2: #000;
-$color2: #222;
 $color3: #333;
 $color4: #f6f6f6;
 $color5: #8E5392; // purple
@@ -23,7 +22,7 @@ $background-color2: #000;
 }
 
 @mixin btn-principal {
-  @include border-radius(35px);
+  // @include border-radius(35px);
   color: $color1;
   background-color: $color5;
   border-color: $color5;
