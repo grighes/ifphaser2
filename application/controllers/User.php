@@ -13,5 +13,10 @@ class User extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 	
+	public function portfolio()
+	{
+		$this->load->view('portfolio');
+	}
+	
 	
 }
