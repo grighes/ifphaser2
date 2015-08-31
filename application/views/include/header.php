@@ -24,7 +24,7 @@
               <a href="index.php">Home</a>
             </li>
             <li class="page-scroll">
-              <a href="portfolio">Portfolio</a>
+              <a href="portfolio">Portfolio</a> 
             </li>
             <li class="page-scroll">
               <a href="#about">About</a>
@@ -33,7 +33,7 @@
               <a href="#contato">Contato</a>
             </li>
             <li class="page-scroll">
-              <a href="#login">Login</a>
+              <a href="login">Login</a>
             </li>
           </ul>
         </div>

@@ -18,7 +18,7 @@
         desenvolver jogos com um framework em javascript chamado <a href="http://phaser.io/">Phaser</a>.</p>
         <p>Os trabalhos foram tão interessantes, que alguns alunos resolveram criar um projeto de portifólio com os jogos da turma. </p>
         <p>Esses trabalho podem ser acessados pelo link abaixo, e caso você seja um aluno do Instituto Federal e gostaria de enviar seu jogo, <a href="#">clique aqui</a> para obter as especificações de envio! </p>
-        <a class="main-btn btn btn-primary btn-lg" href="#">Veja o Portifólio <i class="fa fa-heart-o"></i></a>
+        <a class="main-btn btn btn-primary btn-lg" href="#">Veja o Portifólio <i class="fa fa-rocket"></i></a>
       </div>
       <div class="col-md-4">
         <a href="#">
