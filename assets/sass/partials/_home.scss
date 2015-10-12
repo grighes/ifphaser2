@@ -16,11 +16,11 @@
 }
 
 .col-margin {
-  margin: 15% 0 10%;
+  margin: 18% 0;
 }
 
 .main-btn {
-  @include btn-principal;
+  @include ifg-btn-secundario;
   font-size: 1.2em;
   font-weight: 600;
   @include border-radius(5px);
@@ -76,48 +76,48 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
+  content: "\f005";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: FontAwesome;
+  font-size: 2em;
 }
 
 hr.star-light {
-    border-color: #fff;
+  border-color: #fff;
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+  color: #fff;
+  background-color: #18bc9c;
 }
 
 hr.star-primary {
-    border: #2c3e50 1px solid;
+  border: #2c3e50 1px solid;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
+  color: #2c3e50;
+  background-color: #fff;
 }
 
 
 .floating-label-form-group {
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: .5em;
-    //border-bottom: 1px solid #eee;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: .5em;
+  //border-bottom: 1px solid #eee;
 }
 
 .floating-label-form-group input,
 .floating-label-form-group textarea {
-    padding: $space2;
-    border: solid 1px #dcdcdc;
-    transition: box-shadow 0.3s, border 0.3s;
-    font-size: $space4;
-    @include border-radius(0px);
+  padding: $space2;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  font-size: $space4;
+  @include border-radius(0px);
 }
 
 .floating-label-form-group input:focus,
@@ -145,16 +145,68 @@ hr.star-primary:after {
 
 
 .floating-label-form-group-with-value label {
-    top: 0;
-    opacity: 1;
+  top: 0;
+  opacity: 1;
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+  color: #18bc9c;
 }
 
 form .row:first-child .floating-label-form-group {
-    //border-top: 1px solid #eee;
+  //border-top: 1px solid #eee;
+}
+
+// About Us
+
+.aboutus {
+  margin-bottom: 5%;
+}
+
+.page-header {
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+
+.hr-aboutus {
+  border: 1px solid #000;
+  width: 25px;
+}
+
+.aboutus-image {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  @include border-radius(100px);
+  @include background-image(url("/assets/images/notebook.jpg"));
+  background-position: center top, center;
+  background-repeat: no-repeat, repeat-x;
+}
+
+.about-sub-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .aboutus-text {
+    width: 50%;
+    padding: 0 0 0 $space4 + 5px;
+  }
+  p {
+  }
+}
+
+.about-sub-container-mid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+  .aboutus-text {
+    width: 50%;
+    padding: 0 0 $space4 + 5px 0;
+  }
+  p {
+  }
 }
 
 /*@media (min-width: 992px) {
@@ -170,3 +222,4 @@ form .row:first-child .floating-label-form-group {
   padding-left: 15px;
   padding-right: 15px;
 }*/
+

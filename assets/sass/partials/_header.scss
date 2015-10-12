@@ -1,3 +1,7 @@
+.ifg-main-wrap {
+  @include linear-gradient(90deg, $color2 10%, $color12 90%);
+}
+
 .ifg-navbar {
   background-color: transparent;
   border-color: transparent;  
@@ -29,7 +33,7 @@
   padding: 10px 40px;
   border-radius: 3px;
   @include transition(all 0.3s ease-in-out);
-}  
+}
 
 .ifg-btn-principal:hover {
   @include ifg-btn-principal-hover;
@@ -39,4 +43,21 @@
 .logo-top{
   height: 50px;
   width: 80px;
+}
+
+.navbar-default .navbar-toggle:focus {
+ background-color: transparent;
+ border-color: $color1;
+}
+
+.navbar-default .navbar-toggle:hover {
+  @include navbar-toggle;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $color1;
+}
+
+.third-text {
+    margin: 5% 0 2% 0;
 }

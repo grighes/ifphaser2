@@ -1,30 +1,51 @@
-  <div class="container">
+<section>
+  <div class="container aboutus">
   
     <!-- Page Heading -->
-    <div class="row" id="#about">
+    <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">About Us
-            <small>O projeto IFGames</small>
-        </h1>
+        <h1 class="page-header">About Us</h1>
+        <hr class="hr-aboutus"></hr>
       </div>
     </div>
   
     <!-- Project One -->
-    <a  name="about"></a>
     <div class="row">
-      <div class="col-md-8">
-        <h3>Inspiração</h3>
-        <p>Na disciplina de Construção de Páginas da Web II, os alunos foram desafiados pelo professor Rodrigo Prestes a 
-        desenvolver jogos com um framework em javascript chamado <a href="http://phaser.io/">Phaser</a>.</p>
-        <p>Os trabalhos foram tão interessantes, que alguns alunos resolveram criar um projeto de portifólio com os jogos da turma. </p>
-        <p>Esses trabalho podem ser acessados pelo link abaixo, e caso você seja um aluno do Instituto Federal e gostaria de enviar seu jogo, <a href="#">clique aqui</a> para obter as especificações de envio! </p>
-        <a class="main-btn btn btn-primary btn-lg" href="#">Veja o Portifólio <i class="fa fa-rocket"></i></a>
-        <br><br>
+      <div class="col-md-12">
+        
+        <div class="about-sub-container">
+          <div class="aboutus-image"></div>
+          <div class="aboutus-text">
+            <h4>Inspiração</h4>
+            <p>
+              O que somos é simples, desenvolvedores que querem criar jogos!
+              Queremos difundir a comunidade de desenvolvedores de jogos
+              e integrar a comunidade nessa causa!
+            </p>
+          </div>
+        </div>
+        
+        <div class="about-sub-container-mid">
+          <div class="aboutus-image"></div>
+          <div class="aboutus-text">
+            <h4>Trajetória</h4>
+            <p>
+              Tudo começou no IFRS/POA, quando fomos desafiados a criar jogos e por aí não paramos mais.
+            </p>
+          </div>
+        </div>
+        
+        <div class="about-sub-container">
+          <div class="aboutus-image"></div>
+          <div class="aboutus-text">
+            <h4>Futuro</h4>
+            <p>
+              Queremos expandir essa vontade de respirar o mundo dos jogos com toda comunidade!
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <a href="#">
-            <img class="img-responsive " src="assets/images/talk.png" alt="">
-        </a>
-      </div>
+      <!--<a class="ifg-btn-secundario" href="#">Veja o Portifólio</a>-->
     </div>
   </div>
+</section>

@@ -5828,8 +5828,8 @@ footer {
   float: left; }
 
 .main-wrap {
-  background-image: url("/assets/images/space.jpg");
-  background-image: url("/assets/images/space.jpg");
+  /*background-image: url("/assets/images/space.jpg");
+  background-image: url("/assets/images/space.jpg");*/
   background-position: center;
   background-repeat: repeat;
   text-align: center;

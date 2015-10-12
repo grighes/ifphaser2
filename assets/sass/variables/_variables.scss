@@ -8,9 +8,17 @@ $color3: #333;
 $color4: #f6f6f6;
 $color5: #8E5392; // purple
 $color6: #733A75; // purple hover
-$color7: #CE92D3;//  purple lighter
+$color7: #CE92D3; // purple lighter
 $color8: transparent;
-$color9: #898989; //border
+$color9: #898989; // border
+$color10: #FEC503; // moon yellow
+$color11: #FED136; //yellow lighter
+$color12: #53346D; //roxo
+
+//rgba
+$rgba1: rgba(0,0,0,1);
+$rgba2: rgba(0,0,0,0.8);
+$rgba3: rgba(66,41,87,0.8);
 
 // background colors
 $background-color1: #fff;
@@ -26,17 +34,41 @@ $space3: 15px;
 $space4: 20px;
 $space5: 30px;
 
-// mixins
+//mixins
 @mixin ifg-btn-principal {
   background-color: $color8;
   color: $color1;
-  border: 2px solid $color9;
+  border: 2px solid $color1;
 }
 
 @mixin ifg-btn-principal-hover {
   background-color: $color5;
   color: $color1;
   border-color: $color5;
+}
+
+@mixin ifg-btn-secundario {
+  color: $color5;
+  background-color: $color8;
+  border: 2px solid $color5;
+}
+
+@mixin ifg-btn-secundario-hover {
+  background-color: $color5;
+  color: $color1;
+  border-color: $color5;
+}
+
+@mixin ifg-btn-3 {
+  background-color: $color11;
+  color: $color1;
+  border-color: $color11;
+}
+
+@mixin ifg-btn-3-hover {
+  background-color: $color10;
+  color: $color1;
+  border-color: $color10;
 }
 
 @mixin border-radius($radius) {
@@ -46,18 +78,17 @@ $space5: 30px;
   border-radius: $radius;
 }
 
-@mixin btn-principal {
-  // @include border-radius(35px);
-  color: $color1;
-  background-color: $color1;
-  border-color: $color5;
-}
-
 @mixin link1-mixin {
   color: $color5;
 }
 
+// remove sombra azul do bootstrap para todos botõess
 #{$all-buttons-focus} {
   outline: none;
   box-shadow: none !important;
+}
+
+@mixin navbar-toggle {
+   background-color: $color10 !important;
+    border-color: $color10;
 }

@@ -11,22 +11,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<!-- Header -->
 	<header>
-    <section class="main-wrap header">
+    <section class="main-wrap header ifg-main-wrap">
       <?php $this->load->view('include/nav'); ?>
       <?php $this->load->view('main-section'); ?>
     </section>
 	</header>
-    
+  
   <!-- Page Content -->
+  
   <?php $this->load->view('aboutus'); ?>
-  <hr>
+  
 
   <!-- Contact Section -->
   <?php $this->load->view('contato'); ?>
   
-  <footer>
-	  <?php $this->load->view('include/footer'); ?>
-	</footer> 
+	<?php $this->load->view('include/footer'); ?>
+
 	
 	<script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/bootstrap.js"></script>

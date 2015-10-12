@@ -1,11 +1,21 @@
 @include font-face(Open Sans, "fonts/open_sans/OpenSans-Regular");
 
 html, body {
-  //font-family: $font-family-base;
-  //@include font-face("Open Sans", "/fonts/open_sans/OpenSans-Regular");
-  //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');
-  //@include font-face(Open Sans, "open_sans/OpenSans-Regular");
   font-family: 'Open Sans';
+}
+
+button {
+  border: none;
+}
+
+.ifg-contact-image {
+  background: 
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1), 
+      rgba(66,41,87,0.8)
+    ), 
+    url("/assets/images/montanhas2.png");
 }
 
 .header {
@@ -25,6 +35,51 @@ footer {
   background-color: $color3;
 }
 
+/*#contactForm {
+  font-family: "Open Sans";
+}*/
+
 .border-bottom{
   border-bottom: 1px $color4 solid;
+}
+
+.ifg-btn-secundario {
+  @include ifg-btn-secundario;
+  padding: 10px 40px;
+  border-radius: 3px;
+  @include transition(all 0.3s ease-in-out);
+}
+
+.ifg-btn-secundario:hover {
+  @include ifg-btn-secundario-hover;
+  @include transition(all 0.3s ease-in-out);
+  text-decoration: none;
+}
+
+.ifg-btn-3 {
+  @include ifg-btn-3;
+  padding: 10px 40px;
+  border-radius: 3px;
+  
+  @include transition(all 0.3s ease-in-out);
+}
+
+.ifg-btn-3:hover {
+  @include ifg-btn-3-hover;
+  @include transition(all 0.3s ease-in-out);
+  //text-decoration: none;
+}
+
+.ifg-form {
+  background-color: $color8;
+}
+
+.page-header-w {
+  color: $color1;
+  margin-top: 40px;
+}
+
+.hr-aboutus-w {
+  border-color: $color1;
+  width: 25px;
 }
