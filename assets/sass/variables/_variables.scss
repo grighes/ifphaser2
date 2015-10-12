@@ -1,5 +1,5 @@
 // fonts
-$font-family-base: 'Open Sans', Helvetica, sans-serif;
+//$font-family-base: 'Open Sans', Helvetica, sans-serif;
 
 // colors
 $color1: #fff;
@@ -8,12 +8,37 @@ $color3: #333;
 $color4: #f6f6f6;
 $color5: #8E5392; // purple
 $color6: #733A75; // purple hover
+$color7: #CE92D3;//  purple lighter
+$color8: transparent;
+$color9: #898989; //border
 
 // background colors
 $background-color1: #fff;
 $background-color2: #000;
 
+//Font Sizes
+$font-size1: 15px;
+
+//spaces
+$space1: 5px;
+$space2: 10px;
+$space3: 15px;
+$space4: 20px;
+$space5: 30px;
+
 // mixins
+@mixin ifg-btn-principal {
+  background-color: $color8;
+  color: $color1;
+  border: 2px solid $color9;
+}
+
+@mixin ifg-btn-principal-hover {
+  background-color: $color5;
+  color: $color1;
+  border-color: $color5;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -24,10 +49,15 @@ $background-color2: #000;
 @mixin btn-principal {
   // @include border-radius(35px);
   color: $color1;
-  background-color: $color5;
+  background-color: $color1;
   border-color: $color5;
 }
 
 @mixin link1-mixin {
   color: $color5;
+}
+
+#{$all-buttons-focus} {
+  outline: none;
+  box-shadow: none !important;
 }

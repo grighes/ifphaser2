@@ -1,31 +1,23 @@
 /*
-Error: Undefined variable: "$font-family-base".
-        on line 2 of /home/ubuntu/workspace/assets/sass/partials/_base.scss
+Error: Undefined mixin 'font-face'.
+        on line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss, in `font-face'
+        from line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss
 
-1: html, body {
-2:   font-family: $font-family-base;
-3: }
-4: 
-5: .header {
-6:   background-position: center top;
-7:   background-repeat: no-repeat;
+1: @include font-face(Open Sans, "fonts/open_sans/OpenSans-Regular");
+2: 
+3: html, body {
+4:   //font-family: $font-family-base;
+5:   //@include font-face("Open Sans", "/fonts/open_sans/OpenSans-Regular");
+6:   //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');
 
 Backtrace:
-/home/ubuntu/workspace/assets/sass/partials/_base.scss:2
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/home/ubuntu/workspace/assets/sass/partials/_base.scss:1:in `font-face'
+/home/ubuntu/workspace/assets/sass/partials/_base.scss:1
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:98:in `block in with_mixin'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `map'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:98:in `with_mixin'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +57,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-family-base\".\A         on line 2 of /home/ubuntu/workspace/assets/sass/partials/_base.scss\A \A 1: html, body {\A 2:   font-family: $font-family-base;\A 3: }\A 4: \A 5: .header {\A 6:   background-position: center top;\A 7:   background-repeat: no-repeat;"; }
+  content: "Error: Undefined mixin 'font-face'.\A         on line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss, in `font-face'\A         from line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss\A \A 1: @include font-face(Open Sans, \"fonts/open_sans/OpenSans-Regular\");\A 2: \A 3: html, body {\A 4:   //font-family: $font-family-base;\A 5:   //@include font-face(\"Open Sans\", \"/fonts/open_sans/OpenSans-Regular\");\A 6:   //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');"; }

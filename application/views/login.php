@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body>
 	
 	<header>
-	  <?php $this->load->view('include/header'); ?>
+	  <?php $this->load->view('include/nav'); ?>
 	</header>  
 	  
 	<!-- Container Login Modal -->

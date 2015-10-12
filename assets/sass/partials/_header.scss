@@ -1,9 +1,42 @@
-/*.navbar-default {
-  background-color: transparent; 
-  border-color: transparent; 
-}*/
+.ifg-navbar {
+  background-color: transparent;
+  border-color: transparent;  
+  margin-bottom: 0;
+}
+
+.ifg-navbar-right {
+
+  li { 
+    font-size: $font-size1;
+    text-transform: uppercase;
+    }
+  
+  a {
+    color: $color1 !important;
+    font-weight: 700;
+    @include transition(all 0.3s ease-in-out);
+  }
+  
+  a:hover {
+    color: $color7 !important;
+    @include transition(all 0.3s ease-in-out);
+  }
+  
+}
+
+.ifg-btn-principal {
+  @include ifg-btn-principal;
+  padding: 10px 40px;
+  border-radius: 3px;
+  @include transition(all 0.3s ease-in-out);
+}  
+
+.ifg-btn-principal:hover {
+  @include ifg-btn-principal-hover;
+  @include transition(all 0.3s ease-in-out);
+}
 
 .logo-top{
-  height:50px;
+  height: 50px;
   width: 80px;
 }

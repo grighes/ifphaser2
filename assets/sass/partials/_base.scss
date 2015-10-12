@@ -1,5 +1,11 @@
+@include font-face(Open Sans, "fonts/open_sans/OpenSans-Regular");
+
 html, body {
-  font-family: $font-family-base;
+  //font-family: $font-family-base;
+  //@include font-face("Open Sans", "/fonts/open_sans/OpenSans-Regular");
+  //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');
+  //@include font-face(Open Sans, "open_sans/OpenSans-Regular");
+  font-family: 'Open Sans';
 }
 
 .header {

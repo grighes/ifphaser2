@@ -46,7 +46,7 @@
 
 .intro-text {
   margin: 0;
-  font-size: 4.5em;
+  font-size: 3em;
   /*text-shadow: 1px 2px 3px #666;*/
 }
 
@@ -55,7 +55,9 @@
 }
 
 .link-principal:hover, .link-principal:focus  {
-  color: $color6;
+  //color: $color6;
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
 }
 
 .third-text {
@@ -64,12 +66,12 @@
 
 hr.star-light,
 hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
 }
 
 hr.star-light:after,
@@ -93,7 +95,7 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border: #2c3e50 1px solid;
 }
 
 hr.star-primary:after {
@@ -106,24 +108,25 @@ hr.star-primary:after {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    //border-bottom: 1px solid #eee;
 }
 
 .floating-label-form-group input,
 .floating-label-form-group textarea {
-    z-index: 1;
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-    border: 0;
-    border-radius: 0;
-    font-size: 1.5em;
-    background: 0 0;
-    box-shadow: none!important;
-    resize: none;
+    padding: $space2;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    font-size: $space4;
+    @include border-radius(0px);
 }
 
-.floating-label-form-group label {
+.floating-label-form-group input:focus,
+.floating-label-form-group textarea:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+/*.floating-label-form-group label {
     display: block;
     z-index: 0;
     position: relative;
@@ -138,7 +141,7 @@ hr.star-primary:after {
     -moz-transition: top .3s ease,opacity .3s ease;
     -ms-transition: top .3s ease,opacity .3s ease;
     transition: top .3s ease,opacity .3s ease;
-}
+}*/
 
 
 .floating-label-form-group-with-value label {
@@ -151,5 +154,19 @@ hr.star-primary:after {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    //border-top: 1px solid #eee;
 }
+
+/*@media (min-width: 992px) {
+  .col-md-aboutus {
+    float: left;
+  }
+}
+
+.col-md-aboutus {
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}*/
