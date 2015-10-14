@@ -5795,6 +5795,10 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+  outline: none;
+  box-shadow: none !important; }
+
 @font-face {
   font-family: Open Sans;
   font-style: normal;
@@ -5802,6 +5806,12 @@ button.close {
   src: url("fonts/open_sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/open_sans/OpenSans-Regular.woff2") format("woff2"), url("fonts/open_sans/OpenSans-Regular.woff") format("woff"), url("fonts/open_sans/OpenSans-Regular.ttf") format("truetype"), url("fonts/open_sans/OpenSans-Regular.svg#Open Sans") format("svg"); }
 html, body {
   font-family: 'Open Sans'; }
+
+button {
+  border: none; }
+
+.ifg-contact-image {
+  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/montanhas2.png"); }
 
 .header {
   background-position: center top;
@@ -5817,8 +5827,59 @@ footer {
   color: #fff;
   background-color: #333; }
 
+/*#contactForm {
+  font-family: "Open Sans";
+}*/
 .border-bottom {
   border-bottom: 1px #f6f6f6 solid; }
+
+.ifg-btn-secundario {
+  color: #8E5392;
+  background-color: transparent;
+  border: 2px solid #8E5392;
+  padding: 10px 40px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-secundario:hover {
+  background-color: #8E5392;
+  color: #fff;
+  border-color: #8E5392;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; }
+
+.ifg-btn-3 {
+  background-color: #FED136;
+  color: #fff;
+  border-color: #FED136;
+  padding: 10px 40px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-3:hover {
+  background-color: #FEC503;
+  color: #fff;
+  border-color: #FEC503;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-form {
+  background-color: transparent; }
+
+.page-header-w {
+  color: #fff;
+  margin-top: 40px; }
+
+.hr-aboutus-w {
+  border-color: #fff;
+  width: 25px; }
 
 .wrap-all {
   margin-left: 15%; }
@@ -5828,20 +5889,20 @@ footer {
   float: left; }
 
 .main-wrap {
-  /*background-image: url("/assets/images/space.jpg");
-  background-image: url("/assets/images/space.jpg");*/
+  background-image: url("/assets/images/space.jpg");
+  background-image: url("/assets/images/space.jpg");
   background-position: center;
   background-repeat: repeat;
   text-align: center;
   color: #fff; }
 
 .col-margin {
-  margin: 15% 0 10%; }
+  margin: 18% 0; }
 
 .main-btn {
-  color: #fff;
-  background-color: #8E5392;
-  border-color: #8E5392;
+  color: #8E5392;
+  background-color: transparent;
+  border: 2px solid #8E5392;
   font-size: 1.2em;
   font-weight: 600;
   -webkit-border-radius: 5px;
@@ -5880,7 +5941,7 @@ footer {
 
 .intro-text {
   margin: 0;
-  font-size: 4.5em;
+  font-size: 3em;
   /*text-shadow: 1px 2px 3px #666;*/ }
 
 .link-principal {
@@ -5970,6 +6031,52 @@ hr.star-primary:after {
 .floating-label-form-group-with-focus label {
   color: #18bc9c; }
 
+.aboutus {
+  margin-bottom: 5%; }
+
+.page-header {
+  text-align: center;
+  border: none;
+  padding: 0; }
+
+.hr-aboutus {
+  border: 1px solid #000;
+  width: 25px; }
+
+.aboutus-image {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  background-image: url("/assets/images/notebook.jpg");
+  background-image: url("/assets/images/notebook.jpg");
+  background-position: center top, center;
+  background-repeat: no-repeat, repeat-x; }
+
+.about-sub-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .about-sub-container .aboutus-text {
+    width: 40%;
+    padding: 0 0 0 25px; }
+  .about-sub-container h4 {
+    font-weight: bold; }
+
+.about-sub-container-mid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .about-sub-container-mid .aboutus-text {
+    width: 38%;
+    padding: 0 25px 0 0; }
+  .about-sub-container-mid h4 {
+    font-weight: bold; }
+
 /*@media (min-width: 992px) {
   .col-md-aboutus {
     float: left;
@@ -5983,19 +6090,71 @@ hr.star-primary:after {
   padding-left: 15px;
   padding-right: 15px;
 }*/
-.ifph-navbar {
+.ifg-main-wrap {
+  background-color: #000;
+  background-image: -webkit-linear-gradient(-360deg, #000 10%, #53346D 90%);
+  background-image: linear-gradient(90deg,#000 10%, #53346D 90%); }
+
+.ifg-navbar {
   background-color: transparent;
   border-color: transparent;
   margin-bottom: 0; }
 
-.ifph-navbar-right a {
-  color: #FFF; }
+.ifg-navbar-right li {
+  font-size: 15px;
+  text-transform: uppercase; }
+.ifg-navbar-right a {
+  color: #fff !important;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+.ifg-navbar-right a:hover {
+  color: #CE92D3 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-principal {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-principal:hover {
+  background-color: #8E5392;
+  color: #fff;
+  border-color: #8E5392;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .logo-top {
   height: 50px;
   width: 80px; }
 
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+  border-color: #fff; }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #FEC503 !important;
+  border-color: #FEC503; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+.third-text {
+  margin: 5% 0 2% 0; }
+
+.ifg-footer-image {
+  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/floresta2.png"); }
+
 .copyright {
-  padding: 10px 0; }
+  padding: 170px 10px 33px; }
 
 /*# sourceMappingURL=main.css.map */

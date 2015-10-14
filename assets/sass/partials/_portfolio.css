@@ -1,24 +1,20 @@
 /*
-Error: Undefined mixin 'linear-gradient'.
-        on line 2 of /home/ubuntu/workspace/assets/sass/partials/_header.scss, in `linear-gradient'
-        from line 2 of /home/ubuntu/workspace/assets/sass/partials/_header.scss
+Error: Undefined variable: "$space4".
+        on line 2 of /home/ubuntu/workspace/assets/sass/partials/_portfolio.scss
 
-1: .ifg-main-wrap {
-2:   @include linear-gradient(90deg, $color2 10%, $color12 90%);
+1: .margin-bottom { // if first
+2:   margin-bottom: $space4;
 3: }
 4: 
-5: .ifg-navbar {
-6:   background-color: transparent;
-7:   border-color: transparent;  
+5: .margin-top { // if last
+6:   margin-top: $space4;
+7: }
 
 Backtrace:
-/home/ubuntu/workspace/assets/sass/partials/_header.scss:2:in `linear-gradient'
-/home/ubuntu/workspace/assets/sass/partials/_header.scss:2
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:98:in `block in with_mixin'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:98:in `with_mixin'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/home/ubuntu/workspace/assets/sass/partials/_portfolio.scss:2
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
@@ -69,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'linear-gradient'.\A         on line 2 of /home/ubuntu/workspace/assets/sass/partials/_header.scss, in `linear-gradient'\A         from line 2 of /home/ubuntu/workspace/assets/sass/partials/_header.scss\A \A 1: .ifg-main-wrap {\A 2:   @include linear-gradient(90deg, $color2 10%, $color12 90%);\A 3: }\A 4: \A 5: .ifg-navbar {\A 6:   background-color: transparent;\A 7:   border-color: transparent;  "; }
+  content: "Error: Undefined variable: \"$space4\".\A         on line 2 of /home/ubuntu/workspace/assets/sass/partials/_portfolio.scss\A \A 1: .margin-bottom { // if first\A 2:   margin-bottom: $space4;\A 3: }\A 4: \A 5: .margin-top { // if last\A 6:   margin-top: $space4;\A 7: }"; }

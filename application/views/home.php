@@ -17,14 +17,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
 	</header>
   
-  <!-- Page Content -->
-  
+  <!-- AboutUs -->
   <?php $this->load->view('aboutus'); ?>
-  
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <?php $this->load->view('contato'); ?>
-  
+
+  <!-- Footer -->
 	<?php $this->load->view('include/footer'); ?>
 
 	

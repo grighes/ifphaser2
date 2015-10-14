@@ -1,0 +1,55 @@
+.margin-bottom { // if first
+  margin-bottom: $space4;
+}
+
+.margin-top { // if last
+  margin-top: $space4;
+}
+
+.margin-bot-top { // if middle
+   margin: $space4 0;
+}
+
+.ifg-portfolio {
+  //background: red;
+}
+
+.ifg-header {
+   @include linear-gradient(90deg, $color2 10%, $color12 90%);
+}
+
+.page-header {
+  text-transform: uppercase;
+}
+
+.ifg-full-container {
+  @include border-radius(2px);
+  border: 2px solid $color4;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  @include linear-gradient(45deg, red 14.3%, orange 28.6%, yellow 42.9%, green 57.2%, blue 71.5%, indigo 85.8%, violet 100%);
+}
+
+/*
+background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red);
+background-repeat:repeat-x;
+  
+.sexy_line { 
+  margin: 25px 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+*/
+
+.ifg-container {
+  padding-left: 0; 
+}
+
+.ifg-button-area {
+  padding-top: 5%;
+}

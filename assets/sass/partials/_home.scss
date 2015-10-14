@@ -189,8 +189,11 @@ form .row:first-child .floating-label-form-group {
   justify-content: flex-start;
   align-items: center;
   .aboutus-text {
-    width: 50%;
+    width: 40%;
     padding: 0 0 0 $space4 + 5px;
+  }
+  h4 {
+    font-weight: bold;
   }
   p {
   }
@@ -202,8 +205,11 @@ form .row:first-child .floating-label-form-group {
   align-items: center;
   flex-direction: row-reverse;
   .aboutus-text {
-    width: 50%;
-    padding: 0 0 $space4 + 5px 0;
+    width: 38%;
+    padding: 0 $space4 + 5px 0 0;
+  }
+  h4 {
+    font-weight: bold;
   }
   p {
   }

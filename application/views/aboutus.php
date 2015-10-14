@@ -18,7 +18,7 @@
           <div class="aboutus-text">
             <h4>Inspiração</h4>
             <p>
-              O que somos é simples, desenvolvedores que querem criar jogos!
+              O que somos é simples, desenvolvedores que querem criar jogos!<br>
               Queremos difundir a comunidade de desenvolvedores de jogos
               e integrar a comunidade nessa causa!
             </p>
