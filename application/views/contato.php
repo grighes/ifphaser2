@@ -42,7 +42,7 @@
             <div id="success"></div>
             <div class="row">
               <div class="form-group col-xs-12">
-                  <button type="submit" class="ifg-btn-3">Send</button>
+                <button type="submit" class="ifg-btn-4">Enviar</button>
               </div>
             </div>
           </form>

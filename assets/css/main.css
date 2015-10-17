@@ -5807,9 +5807,6 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
 html, body {
   font-family: 'Open Sans'; }
 
-button {
-  border: none; }
-
 .ifg-contact-image {
   background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/montanhas2.png"); }
 
@@ -5834,38 +5831,105 @@ footer {
   border-bottom: 1px #f6f6f6 solid; }
 
 .ifg-btn-secundario {
-  color: #8E5392;
-  background-color: transparent;
-  border: 2px solid #8E5392;
   padding: 10px 40px;
   border-radius: 3px;
+  color: #8E5392;
+  border: 2px solid #8E5392;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .ifg-btn-secundario:hover {
-  background-color: #8E5392;
   color: #fff;
   border-color: #8E5392;
+  background-color: #8E5392;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none; }
+  transition: all 0.3s ease-in-out; }
 
 .ifg-btn-3 {
-  background-color: #FED136;
-  color: #fff;
-  border-color: #FED136;
   padding: 10px 40px;
   border-radius: 3px;
+  color: #fff;
+  border: 2px solid #FED136;
+  background-color: #FED136;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .ifg-btn-3:hover {
-  background-color: #FEC503;
   color: #fff;
   border-color: #FEC503;
+  background-color: #FEC503;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-4 {
+  padding: 10px 40px;
+  border-radius: 3px;
+  color: #FEC503;
+  border: 2px solid #FEC503;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-4:hover {
+  color: #fff;
+  border-color: #FEC503;
+  background-color: #FEC503;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-5 {
+  padding: 10px 40px;
+  border-radius: 3px;
+  color: green;
+  border: 2px solid green;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.ifg-btn-5:hover {
+  color: #fff;
+  border-color: green;
+  background-color: green;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
@@ -5898,46 +5962,6 @@ footer {
 
 .col-margin {
   margin: 18% 0; }
-
-.main-btn {
-  color: #8E5392;
-  background-color: transparent;
-  border: 2px solid #8E5392;
-  font-size: 1.2em;
-  font-weight: 600;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  -webkit-transition-delay: 0.5s;
-  -moz-transition-delay: 0.5s;
-  transition-delay: 0.5s; }
-
-.main-btn:hover, .main-btn:focus {
-  color: #fff;
-  background-color: #733A75;
-  border-color: #733A75;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  -webkit-transition-delay: 0.5s;
-  -moz-transition-delay: 0.5s;
-  transition-delay: 0.5s; }
 
 .intro-text {
   margin: 0;
@@ -6112,7 +6136,13 @@ hr.star-primary:after {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   border-radius: 2px;
-  border: 2px solid #f6f6f6; }
+  border: 2px solid #f6f6f6;
+  padding-left: 0; }
+  .ifg-full-container h3, .ifg-full-container h4 {
+    margin-top: 2%; }
+
+.btn-wrap {
+  text-align: center; }
 
 .line {
   height: 2px;
@@ -6121,22 +6151,11 @@ hr.star-primary:after {
   background-image: -webkit-linear-gradient(-315deg, red 14.3%, orange 28.6%, yellow 42.9%, green 57.2%, blue 71.5%, indigo 85.8%, violet 100%);
   background-image: linear-gradient(45deg,red 14.3%, orange 28.6%, yellow 42.9%, green 57.2%, blue 71.5%, indigo 85.8%, violet 100%); }
 
-/*
-background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red);
-background-repeat:repeat-x;
-  
-.sexy_line { 
-  margin: 25px 0;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
-}
-
-*/
 .ifg-container {
   padding-left: 0; }
 
 .ifg-button-area {
+  display: inline-block;
   padding-top: 5%; }
 
 .ifg-main-wrap {
@@ -6165,19 +6184,27 @@ background-repeat:repeat-x;
   transition: all 0.3s ease-in-out; }
 
 .ifg-btn-principal {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
   padding: 10px 40px;
   border-radius: 3px;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .ifg-btn-principal:hover {
-  background-color: #8E5392;
   color: #fff;
-  border-color: #8E5392;
+  border-color: #733A75;
+  background-color: #733A75;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }

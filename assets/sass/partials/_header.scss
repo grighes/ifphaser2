@@ -28,16 +28,14 @@
   
 }
 
+// main btn
 .ifg-btn-principal {
   @include ifg-btn-principal;
-  padding: 10px 40px;
-  border-radius: 3px;
-  @include transition(all 0.3s ease-in-out);
+  
 }
 
 .ifg-btn-principal:hover {
   @include ifg-btn-principal-hover;
-  @include transition(all 0.3s ease-in-out);
 }
 
 .logo-top{

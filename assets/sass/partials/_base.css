@@ -6,9 +6,9 @@ Error: Undefined mixin 'font-face'.
 1: @include font-face(Open Sans, "fonts/open_sans/OpenSans-Regular");
 2: 
 3: html, body {
-4:   //font-family: $font-family-base;
-5:   //@include font-face("Open Sans", "/fonts/open_sans/OpenSans-Regular");
-6:   //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');
+4:   font-family: 'Open Sans';
+5: }
+6: 
 
 Backtrace:
 /home/ubuntu/workspace/assets/sass/partials/_base.scss:1:in `font-face'
@@ -57,4 +57,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-face'.\A         on line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss, in `font-face'\A         from line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss\A \A 1: @include font-face(Open Sans, \"fonts/open_sans/OpenSans-Regular\");\A 2: \A 3: html, body {\A 4:   //font-family: $font-family-base;\A 5:   //@include font-face(\"Open Sans\", \"/fonts/open_sans/OpenSans-Regular\");\A 6:   //@include font-face('Open Sans', '/fonts/open_sans/OpenSans-Regular');"; }
+  content: "Error: Undefined mixin 'font-face'.\A         on line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss, in `font-face'\A         from line 1 of /home/ubuntu/workspace/assets/sass/partials/_base.scss\A \A 1: @include font-face(Open Sans, \"fonts/open_sans/OpenSans-Regular\");\A 2: \A 3: html, body {\A 4:   font-family: 'Open Sans';\A 5: }\A 6: "; }

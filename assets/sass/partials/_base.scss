@@ -5,7 +5,7 @@ html, body {
 }
 
 button {
-  border: none;
+  //border: none;
 }
 
 .ifg-contact-image {
@@ -45,29 +45,34 @@ footer {
 
 .ifg-btn-secundario {
   @include ifg-btn-secundario;
-  padding: 10px 40px;
-  border-radius: 3px;
-  @include transition(all 0.3s ease-in-out);
 }
 
 .ifg-btn-secundario:hover {
   @include ifg-btn-secundario-hover;
-  @include transition(all 0.3s ease-in-out);
-  text-decoration: none;
 }
 
 .ifg-btn-3 {
   @include ifg-btn-3;
-  padding: 10px 40px;
-  border-radius: 3px;
-  
-  @include transition(all 0.3s ease-in-out);
 }
 
 .ifg-btn-3:hover {
   @include ifg-btn-3-hover;
-  @include transition(all 0.3s ease-in-out);
-  //text-decoration: none;
+}
+
+.ifg-btn-4 {
+  @include ifg-btn-4;
+}
+
+.ifg-btn-4:hover {
+  @include ifg-btn-4-hover;
+}
+
+.ifg-btn-5 {
+  @include ifg-btn-5;
+}
+
+.ifg-btn-5:hover {
+  @include ifg-btn-5-hover;
 }
 
 .ifg-form {

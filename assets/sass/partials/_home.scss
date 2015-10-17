@@ -19,31 +19,6 @@
   margin: 18% 0;
 }
 
-.main-btn {
-  @include ifg-btn-secundario;
-  font-size: 1.2em;
-  font-weight: 600;
-  @include border-radius(5px);
-  
-  // transition quando volta do efeito hover
-  @include transition-property(all);
-  @include transition-duration(0.5s);
-  @include transition-timing-function(ease-in);
-  @include transition-delay(0.5s);
-}
-
-.main-btn:hover, .main-btn:focus {
-  color: $color1;
-  background-color: $color6;
-  border-color: $color6;
-  
-  // transition quando acessa botão
-  @include transition-property(all);
-  @include transition-duration(0.5s);
-  @include transition-timing-function(ease-in);
-  @include transition-delay(0.5s);
-}
-
 .intro-text {
   margin: 0;
   font-size: 3em;

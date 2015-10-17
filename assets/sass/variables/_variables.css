@@ -1,19 +1,21 @@
 /*
 Error: Undefined variable: "$all-buttons-focus".
-        on line 67 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss
+        on line 155 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss
 
-62: @mixin link1-mixin {
-63:   color: $color5;
-64: }
-65: 
-66: // remove sombra azul do bootstrap para todos botõess
-67: #{$all-buttons-focus} {
-68:   outline: none;
-69:   box-shadow: none !important;
-70: }
+150: @mixin link1-mixin {
+151:   color: $color5;
+152: }
+153: 
+154: // remove sombra azul do bootstrap para todos botõess
+155: #{$all-buttons-focus} {
+156:   outline: none;
+157:   box-shadow: none !important;
+158: }
+159: 
+160: @mixin navbar-toggle {
 
 Backtrace:
-/home/ubuntu/workspace/assets/sass/variables/_variables.scss:67
+/home/ubuntu/workspace/assets/sass/variables/_variables.scss:155
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/interpolation.rb:100:in `_perform'
@@ -62,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$all-buttons-focus\".\A         on line 67 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss\A \A 62: @mixin link1-mixin {\A 63:   color: $color5;\A 64: }\A 65: \A 66: // remove sombra azul do bootstrap para todos botõess\A 67: #{$all-buttons-focus} {\A 68:   outline: none;\A 69:   box-shadow: none !important;\A 70: }"; }
+  content: "Error: Undefined variable: \"$all-buttons-focus\".\A         on line 155 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss\A \A 150: @mixin link1-mixin {\A 151:   color: $color5;\A 152: }\A 153: \A 154: // remove sombra azul do bootstrap para todos botõess\A 155: #{$all-buttons-focus} {\A 156:   outline: none;\A 157:   box-shadow: none !important;\A 158: }\A 159: \A 160: @mixin navbar-toggle {"; }

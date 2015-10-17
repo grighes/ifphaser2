@@ -1,5 +1,3 @@
-// fonts
-//$font-family-base: 'Open Sans', Helvetica, sans-serif;
 
 // colors
 $color1: #fff;
@@ -26,6 +24,7 @@ $background-color2: #000;
 
 //Font Sizes
 $font-size1: 15px;
+$font-size2: 1.2em;
 
 //spaces
 $space1: 5px;
@@ -36,39 +35,109 @@ $space5: 30px;
 
 //mixins
 @mixin ifg-btn-principal {
-  background-color: $color8;
+  padding: $space2 $space2 * 4;
+  border-radius: 3px;
   color: $color1;
   border: 2px solid $color1;
+  background-color: $color8;
+  font-size: $font-size2;
+  font-weight: 600;
+  text-decoration: none;
+  @include border-radius(5px);
+  @include transition(all 0.3s ease-in-out);
+  //@include btn-transition;
 }
 
 @mixin ifg-btn-principal-hover {
-  background-color: $color5;
   color: $color1;
-  border-color: $color5;
+  border-color: $color6;
+  background-color: $color6;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
 }
 
 @mixin ifg-btn-secundario {
+  padding: $space2 $space2 * 4;
+  border-radius: 3px;
   color: $color5;
-  background-color: $color8;
   border: 2px solid $color5;
+  background-color: $color8;
+  font-size: $font-size2;
+  font-weight: 600;
+  text-decoration: none;
+  @include border-radius(5px);
+   @include transition(all 0.3s ease-in-out);
 }
 
 @mixin ifg-btn-secundario-hover {
-  background-color: $color5;
   color: $color1;
   border-color: $color5;
+  background-color: $color5;
+  text-decoration: none;
+   @include transition(all 0.3s ease-in-out);
 }
 
 @mixin ifg-btn-3 {
-  background-color: $color11;
+  padding: $space2 $space2 * 4;
+  border-radius: 3px;
   color: $color1;
-  border-color: $color11;
+  border: 2px solid $color11;
+  background-color: $color11;
+  font-size: $font-size2;
+  font-weight: 600;
+  text-decoration: none;
+  @include border-radius(5px);
+  @include transition(all 0.3s ease-in-out);
 }
 
 @mixin ifg-btn-3-hover {
-  background-color: $color10;
   color: $color1;
   border-color: $color10;
+  background-color: $color10;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin ifg-btn-4 {
+  padding: $space2 $space2 * 4;
+  border-radius: 3px;
+  color: $color10;
+  border: 2px solid $color10;
+  background-color: $color8;
+  font-size: $font-size2;
+  font-weight: 600;
+  text-decoration: none;
+  @include border-radius(5px);
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin ifg-btn-4-hover {
+  color: $color1;
+  border-color: $color10;
+  background-color: $color10;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin ifg-btn-5 {
+  padding: $space2 $space2 * 4;
+  border-radius: 3px;
+  color: green;
+  border: 2px solid green;
+  background-color: $color8;
+  font-size: $font-size2;
+  font-weight: 600;
+  text-decoration: none;
+  @include border-radius(5px);
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin ifg-btn-5-hover {
+  color: $color1;
+  border-color: green;
+  background-color: green;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
 }
 
 @mixin border-radius($radius) {
