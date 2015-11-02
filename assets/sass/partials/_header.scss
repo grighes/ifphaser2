@@ -13,20 +13,28 @@
   li { 
     font-size: $font-size1;
     text-transform: uppercase;
-    }
+  }
   
   a {
-    color: $color1 !important;
-    font-weight: 700;
+    color: $color1;
+    //font-weight: 700;
     @include transition(all 0.3s ease-in-out);
   }
   
   a:hover {
-    color: $color7 !important;
+    color: $color7;
     @include transition(all 0.3s ease-in-out);
   }
   
+  .sign-up-btn {
+    @include ifg-sign-up-btn;
+  }
+  
+  .sign-up-btn:hover {
+    background-color: gold !important;
+  }
 }
+
 
 // main btn
 .ifg-btn-principal {
@@ -41,6 +49,49 @@
 .logo-top{
   height: 50px;
   width: 80px;
+}
+
+.ifg-modal-content {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.ifg-modal-header {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  @include border-radius(100px);
+  @include background-image(url("/assets/images/notebook.jpg"));
+  background-position: center top, center;
+  background-repeat: no-repeat, repeat-x; 
+  border: 0;
+}
+
+.ifg-modal-footer {
+  text-align: center;
+  border: 0;
+}
+
+.ifg-form-glow input[type]{
+  @include input-btn-glow;
+  width: 95%;
+  @include placeholder {
+    color: $color3;
+  }
+}
+.ifg-form-glow input[type]:focus {
+  @include input-btn-glow-focus;
+}
+
+/* Rewrite bootstrap styles ;( */
+.modal-header {
+  border: 0;
+}
+.navbar-default .navbar-nav > li > a {
+  //color: $color1;
 }
 
 .navbar-default .navbar-toggle:focus {

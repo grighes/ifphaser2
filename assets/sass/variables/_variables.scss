@@ -10,8 +10,11 @@ $color7: #CE92D3; // purple lighter
 $color8: transparent;
 $color9: #898989; // border
 $color10: #FEC503; // moon yellow
-$color11: #FED136; //yellow lighter
-$color12: #53346D; //roxo
+$color11: #FED136; // yellow lighter
+$color12: #53346D; // purple
+$ice: #c9c9c9;
+
+$gray1: #969696;
 
 //rgba
 $rgba1: rgba(0,0,0,1);
@@ -36,12 +39,12 @@ $space5: 30px;
 //mixins
 @mixin ifg-btn-principal {
   padding: $space2 $space2 * 4;
-  border-radius: 3px;
   color: $color1;
   border: 2px solid $color1;
   background-color: $color8;
   font-size: $font-size2;
-  font-weight: 600;
+  text-transform: uppercase;
+  //font-weight: 600;
   text-decoration: none;
   @include border-radius(5px);
   @include transition(all 0.3s ease-in-out);
@@ -58,12 +61,12 @@ $space5: 30px;
 
 @mixin ifg-btn-secundario {
   padding: $space2 $space2 * 4;
-  border-radius: 3px;
   color: $color5;
   border: 2px solid $color5;
   background-color: $color8;
   font-size: $font-size2;
-  font-weight: 600;
+  text-transform: uppercase;
+  //font-weight: 600;
   text-decoration: none;
   @include border-radius(5px);
    @include transition(all 0.3s ease-in-out);
@@ -79,12 +82,12 @@ $space5: 30px;
 
 @mixin ifg-btn-3 {
   padding: $space2 $space2 * 4;
-  border-radius: 3px;
   color: $color1;
   border: 2px solid $color11;
   background-color: $color11;
   font-size: $font-size2;
-  font-weight: 600;
+  text-transform: uppercase;
+  //font-weight: 600;
   text-decoration: none;
   @include border-radius(5px);
   @include transition(all 0.3s ease-in-out);
@@ -100,12 +103,12 @@ $space5: 30px;
 
 @mixin ifg-btn-4 {
   padding: $space2 $space2 * 4;
-  border-radius: 3px;
   color: $color10;
   border: 2px solid $color10;
   background-color: $color8;
   font-size: $font-size2;
-  font-weight: 600;
+  text-transform: uppercase;
+  //font-weight: 600;
   text-decoration: none;
   @include border-radius(5px);
   @include transition(all 0.3s ease-in-out);
@@ -121,12 +124,12 @@ $space5: 30px;
 
 @mixin ifg-btn-5 {
   padding: $space2 $space2 * 4;
-  border-radius: 3px;
   color: green;
   border: 2px solid green;
   background-color: $color8;
   font-size: $font-size2;
-  font-weight: 600;
+  text-transform: uppercase;
+  //font-weight: 600;
   text-decoration: none;
   @include border-radius(5px);
   @include transition(all 0.3s ease-in-out);
@@ -140,6 +143,35 @@ $space5: 30px;
   @include transition(all 0.3s ease-in-out);
 }
 
+@mixin ifg-btn-6 {
+  padding: $space2 $space2 * 3;
+  color: $ice;
+  border: 3px solid $ice;
+  background-color: $color8;
+  font-size: $font-size2;
+  text-transform: uppercase;
+  //font-weight: 600;
+  text-decoration: none;
+  //@include border-radius(5px);
+  @include transition(all 0.3s ease-in-out);
+}
+
+@mixin ifg-btn-6-hover {
+  color: white;
+  border-color: $gray1;
+  background-color: $gray1;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+}
+
+//Nav btn
+@mixin ifg-sign-up-btn {
+  background: yellow;
+  //padding: $space2 + 2 $space2 + 2;
+  color: $color3;
+  font-weight: normal;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -151,13 +183,57 @@ $space5: 30px;
   color: $color5;
 }
 
-// remove sombra azul do bootstrap para todos botõess
+/* Start Input styles */
+
+@mixin input-btn-glow {
+  padding: $space2;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.2em;
+  box-shadow: none;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color: white;
+  color: $color3;
+  
+}
+
+@mixin input-btn-glow-focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+@mixin input-btn-thick-border {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 1%;
+  border: solid 3px $ice;
+  transition: border 0.3s;
+  background-color: $color8;
+  color: white;
+    
+}
+
+@mixin input-btn-thick-border-focus {
+  border: solid 3px $gray1;
+}
+
+/* Remove sombra azul do bootstrap para todos botõess */
+
+textarea,
+input[type] {
+  outline: none;
+  box-shadow: none !important;
+}
+
 #{$all-buttons-focus} {
   outline: none;
   box-shadow: none !important;
 }
 
 @mixin navbar-toggle {
-   background-color: $color10 !important;
-    border-color: $color10;
+  background-color: $color10 !important;
+  border-color: $color10;
 }

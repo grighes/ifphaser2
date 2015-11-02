@@ -1,30 +1,35 @@
 /*
-Error: Undefined variable: "$all-buttons-focus".
-        on line 231 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss
+Error: Undefined variable: "$navbar-height".
+        on line 13 of /home/ubuntu/workspace/assets/sass/bootstrap/_navbar.scss
 
-226: input[type] {
-227:   outline: none;
-228:   box-shadow: none !important;
-229: }
-230: 
-231: #{$all-buttons-focus} {
-232:   outline: none;
-233:   box-shadow: none !important;
-234: }
-235: 
-236: @mixin navbar-toggle {
+8: // Provide a static navbar from which we expand to create full-width, fixed, and
+9: // other navbar variations.
+10: 
+11: .navbar {
+12:   position: relative;
+13:   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+14:   margin-bottom: $navbar-margin-bottom;
+15:   border: 1px solid transparent;
+16: 
+17:   // Prevent floats from breaking the navbar
+18:   @include clearfix;
 
 Backtrace:
-/home/ubuntu/workspace/assets/sass/variables/_variables.scss:231
+/home/ubuntu/workspace/assets/sass/bootstrap/_navbar.scss:13
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/interpolation.rb:100:in `_perform'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:536:in `block in run_interp_no_strip'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:534:in `map'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:534:in `run_interp_no_strip'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:541:in `run_interp'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:409:in `visit_rule'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `map'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
@@ -64,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$all-buttons-focus\".\A         on line 231 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss\A \A 226: input[type] {\A 227:   outline: none;\A 228:   box-shadow: none !important;\A 229: }\A 230: \A 231: #{$all-buttons-focus} {\A 232:   outline: none;\A 233:   box-shadow: none !important;\A 234: }\A 235: \A 236: @mixin navbar-toggle {"; }
+  content: "Error: Undefined variable: \"$navbar-height\".\A         on line 13 of /home/ubuntu/workspace/assets/sass/bootstrap/_navbar.scss\A \A 8: // Provide a static navbar from which we expand to create full-width, fixed, and\A 9: // other navbar variations.\A 10: \A 11: .navbar {\A 12:   position: relative;\A 13:   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)\A 14:   margin-bottom: $navbar-margin-bottom;\A 15:   border: 1px solid transparent;\A 16: \A 17:   // Prevent floats from breaking the navbar\A 18:   @include clearfix;"; }

@@ -8,9 +8,9 @@ class User extends CI_Controller {
 		$this->load->view('home');
 	}
 	
-	public function login()
+	public function signup()
 	{
-		$this->load->view('login');
+		$this->load->view('signup');
 	}
 	
 	public function portfolio()

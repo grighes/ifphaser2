@@ -4,10 +4,6 @@ html, body {
   font-family: 'Open Sans';
 }
 
-button {
-  //border: none;
-}
-
 .ifg-contact-image {
   background: 
     linear-gradient(
@@ -34,10 +30,6 @@ footer {
   color: $color1;
   background-color: $color3;
 }
-
-/*#contactForm {
-  font-family: "Open Sans";
-}*/
 
 .border-bottom{
   border-bottom: 1px $color4 solid;
@@ -75,8 +67,23 @@ footer {
   @include ifg-btn-5-hover;
 }
 
-.ifg-form {
-  background-color: $color8;
+.ifg-btn-6 {
+  @include ifg-btn-6;
+}
+
+.ifg-btn-6:hover {
+  @include ifg-btn-6-hover;
+}
+
+.contact-wrap {
+  margin-top: 2%;
+}
+
+.ifg-form input[type], .ifg-form textarea{
+  @include input-btn-thick-border;
+}
+.ifg-form input[type]:focus, .ifg-form textarea:focus{
+  @include input-btn-thick-border-focus;
 }
 
 .page-header-w {

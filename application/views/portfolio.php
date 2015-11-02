@@ -39,10 +39,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="btn-wrap">
             <div class="line"></div>
             <div class="ifg-button-area">
-              <a class="ifg-btn-secundario" href="#">Jogar</a>
+              <a class="ifg-btn-secundario" href="#">JOGAR</a>
             </div>
             <div class="ifg-button-area">
-              <a class="ifg-btn-5" href="#">Votar</a>
+              <a class="ifg-btn-5" href="#">VOTAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    
+    <!-- Project One -->
+    <div class="row">
+      <div class="col-md-12 ifg-full-container margin-bottom">
+        <div class="col-md-7 ifg-container">
+          <a href="#">
+            <img class="img-responsive" src="assets/images/adventure.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Project One</h3>
+          <!--<h4>Subheading</h4>-->
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate.</p>
+          <div class="btn-wrap">
+            <div class="line"></div>
+            <div class="ifg-button-area">
+              <a class="ifg-btn-secundario" href="#">JOGAR</a>
+            </div>
+            <div class="ifg-button-area">
+              <a class="ifg-btn-5" href="#">VOTAR</a>
             </div>
           </div>
         </div>

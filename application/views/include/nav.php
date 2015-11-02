@@ -33,10 +33,51 @@
             <a href="#contato">Contato</a>
           </li>
           <li class="page-scroll">
-            <a href="login">Login</a>
+            <a href="#" data-toggle="modal" data-target="#navModal">Login</a>
+          </li>
+          <li class="page-scroll">
+            <a href="user/signup" class="sign-up-btn">Sign up</a>
           </li>
         </ul>
       </div>
+      
+      <!-- modal login -->
+      <div class="modal fade" id="navModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ifg-modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <!--<h4 class="modal-title" id="myModalLabel">Login</h4>-->
+              <header>
+                <div class="ifg-modal-header"></div>
+              </header>
+            </div>
+            <div class="modal-body">
+            <form action="#">
+              <div class="row control-group">
+                <div class="ifg-form-glow form-group floating-label-form-group controls">
+                  <!--<label>Email Address</label>-->
+                    <input type="email" placeholder="E-mail Address" id="email" required data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="ifg-form-glow form-group floating-label-form-group controls">
+                  <!--<label></label>-->
+                  <input type="password" placeholder="Password" id="password" required data-validation-required-message="Please enter your password.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              </div>
+              <div class="modal-footer ifg-modal-footer">
+                <button type="submmit" class="ifg-btn-secundario">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end modal login-->
+      
     </div>
   </div>
 </nav>
