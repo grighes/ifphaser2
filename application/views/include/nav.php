@@ -21,13 +21,13 @@
             <a href="#page-top"></a>
           </li>
            <li class="page-scroll">
-            <a href="index.php">Home</a>
+            <a href="home">Home</a>
           </li>
           <li class="page-scroll">
             <a href="portfolio">Portfolio</a> 
           </li>
           <li class="page-scroll">
-            <a href="#about">About</a>
+            <a href="#aboutus">About</a>
           </li>
           <li class="page-scroll">
             <a href="#contato">Contato</a>
@@ -36,7 +36,7 @@
             <a href="#" data-toggle="modal" data-target="#navModal">Login</a>
           </li>
           <li class="page-scroll">
-            <a href="user/signup" class="sign-up-btn">Sign up</a>
+            <a href="signup" class="sign-up-btn">Sign up</a>
           </li>
         </ul>
       </div>
@@ -53,31 +53,30 @@
               </header>
             </div>
             <div class="modal-body">
-            <form action="#">
-              <div class="row control-group">
-                <div class="ifg-form-glow form-group floating-label-form-group controls">
-                  <!--<label>Email Address</label>-->
+              <form action="#">
+                <div class="row control-group">
+                  <div class="ifg-form-glow form-group floating-label-form-group controls">
+                    <!--<label>Email Address</label>-->
                     <input type="email" placeholder="E-mail Address" id="email" required data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
+                  </div>
                 </div>
-              </div>
-              <div class="row control-group">
-                <div class="ifg-form-glow form-group floating-label-form-group controls">
-                  <!--<label></label>-->
-                  <input type="password" placeholder="Password" id="password" required data-validation-required-message="Please enter your password.">
-                  <p class="help-block text-danger"></p>
+                <div class="row control-group">
+                  <div class="ifg-form-glow form-group floating-label-form-group controls">
+                    <!--<label></label>-->
+                    <input type="password" placeholder="Password" id="password" required data-validation-required-message="Please enter your password.">
+                    <p class="help-block text-danger"></p>
+                  </div>
                 </div>
-              </div>
-              </div>
-              <div class="modal-footer ifg-modal-footer">
-                <button type="submmit" class="ifg-btn-secundario">Login</button>
-              </div>
-            </form>
+                <div class="modal-footer ifg-modal-footer">
+                  <button type="submmit" class="ifg-btn-secundario">Login</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- end modal login-->
-      
+        <!-- end modal login-->
+        
     </div>
   </div>
 </nav>

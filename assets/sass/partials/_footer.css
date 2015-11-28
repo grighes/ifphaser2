@@ -1,5 +1,5 @@
 .ifg-footer-image {
-  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/floresta2.png"); }
+  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)); }
 
 .copyright {
   padding: 170px 10px 33px; }

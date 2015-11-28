@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$all-buttons-focus".
-        on line 231 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss
+        on line 232 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss
 
-226: input[type] {
-227:   outline: none;
-228:   box-shadow: none !important;
-229: }
-230: 
-231: #{$all-buttons-focus} {
-232:   outline: none;
-233:   box-shadow: none !important;
-234: }
-235: 
-236: @mixin navbar-toggle {
+227: input[type] {
+228:   outline: none;
+229:   box-shadow: none !important;
+230: }
+231: 
+232: #{$all-buttons-focus} {
+233:   outline: none;
+234:   box-shadow: none !important;
+235: }
+236: 
+237: @mixin navbar-toggle {
 
 Backtrace:
-/home/ubuntu/workspace/assets/sass/variables/_variables.scss:231
+/home/ubuntu/workspace/assets/sass/variables/_variables.scss:232
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/interpolation.rb:100:in `_perform'
@@ -64,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$all-buttons-focus\".\A         on line 231 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss\A \A 226: input[type] {\A 227:   outline: none;\A 228:   box-shadow: none !important;\A 229: }\A 230: \A 231: #{$all-buttons-focus} {\A 232:   outline: none;\A 233:   box-shadow: none !important;\A 234: }\A 235: \A 236: @mixin navbar-toggle {"; }
+  content: "Error: Undefined variable: \"$all-buttons-focus\".\A         on line 232 of /home/ubuntu/workspace/assets/sass/variables/_variables.scss\A \A 227: input[type] {\A 228:   outline: none;\A 229:   box-shadow: none !important;\A 230: }\A 231: \A 232: #{$all-buttons-focus} {\A 233:   outline: none;\A 234:   box-shadow: none !important;\A 235: }\A 236: \A 237: @mixin navbar-toggle {"; }

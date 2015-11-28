@@ -1,1 +1,7 @@
 /application/config/database.php
+/assets/css/*.map
+/assets/sass/.sass-cache/*
+/assets/sass/partials/*.map
+/assets/sass/variables/*.map
+/assets/sass/*.map
+/assets/css/*.map

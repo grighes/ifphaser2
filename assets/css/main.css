@@ -5812,7 +5812,7 @@ html, body {
   font-family: 'Open Sans'; }
 
 .ifg-contact-image {
-  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/montanhas2.png"); }
+  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)); }
 
 .header {
   background-position: center top;
@@ -5977,6 +5977,18 @@ footer {
   border-color: #fff;
   width: 25px; }
 
+.ifg-register-wrap {
+  width: auto;
+  position: relative;
+  max-width: 30%;
+  margin: 0 auto; }
+
+.ifg-register-section {
+  background-color: #DED9E1; }
+
+.ifg-large-btn {
+  width: 100%; }
+
 .wrap-all {
   margin-left: 15%; }
 
@@ -6140,7 +6152,8 @@ footer {
   color: #333;
   font-weight: normal; }
 .ifg-navbar-right .sign-up-btn:hover {
-  background-color: gold !important; }
+  background-color: mediumturquoise !important;
+  color: white !important; }
 
 .ifg-btn-principal {
   padding: 10px 40px;
@@ -6239,7 +6252,7 @@ footer {
   margin: 5% 0 2% 0; }
 
 .ifg-footer-image {
-  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)), url("/assets/images/floresta2.png"); }
+  background: linear-gradient(to right, black, rgba(66, 41, 87, 0.8)); }
 
 .copyright {
   padding: 170px 10px 33px; }

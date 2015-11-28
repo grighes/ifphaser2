@@ -11,7 +11,7 @@ html, body {
       rgba(0, 0, 0, 1), 
       rgba(66,41,87,0.8)
     ), 
-    url("/assets/images/montanhas2.png");
+    //url("/assets/images/montanhas2.png");
 }
 
 .header {
@@ -94,4 +94,19 @@ footer {
 .hr-aboutus-w {
   border-color: $color1;
   width: 25px;
+}
+
+.ifg-register-wrap {
+  width: auto;
+  position: relative;
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.ifg-register-section {
+  background-color: $ice2;
+}
+
+.ifg-large-btn {
+  width: 100%;
 }
